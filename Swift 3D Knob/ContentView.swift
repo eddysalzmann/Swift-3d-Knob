@@ -11,17 +11,17 @@ struct ContentView: View {
 
     var body: some View {
         VStack{
-            Swift3DButton(start: 0, width: 200, height: 200, minVal: 0, maxVal: 127, speed: 0.5)
+            Swift3DKnob(start: 0, width: 200, height: 200, minVal: 0, maxVal: 127, speed: 0.5)
             Text("Speed 0.5")
-            Swift3DButton(start: 60, width: 200, height: 200, minVal: 0, maxVal: 127, speed: 1)
+            Swift3DKnob(start: 60, width: 200, height: 200, minVal: 0, maxVal: 127, speed: 1)
             Text("Speed 1")
-            Swift3DButton(start: 104, width: 200, height: 200, minVal: 0, maxVal: 127, speed: 1.5)
+            Swift3DKnob(start: 104, width: 200, height: 200, minVal: 0, maxVal: 127, speed: 1.5)
             Text("Speed 1.5")
         }
     }
 }
 
-struct Swift3DButton : View{
+struct Swift3DKnob : View{
     
     // Init values
     var start: Int
